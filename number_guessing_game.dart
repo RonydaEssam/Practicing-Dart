@@ -1,5 +1,5 @@
 /*
-1. Number Guessing Game
+  Number Guessing Game
   - Generate a random number between 1 and 100.
   - Let the user guess numbers in a loop (while).
   - Use if..else to check if the guess is too high, too low, or correct.
