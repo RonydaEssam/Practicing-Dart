@@ -18,23 +18,31 @@ void main() {
   print("Welcome to the Number Guessing Game!");
   print("I'm thinking of a number between 1 and 100...");
 
+  int num_of_tries = 0;
+
   // take an input from the user
-  try {
-    while (true) {
-      print('Enter your guess here: ');
-      String? input = stdin.readLineSync();
+  while (true) {
+    print('Enter your guess here: ');
+    String? input = stdin.readLineSync();
+
+    try {
       int guess = int.parse(input!);
+      num_of_tries++;
 
       if (guess == target) {
         print('Correct answer! $guess is right!');
+        print('You got it right in $num_of_tries attempts.');
         break;
       } else if (guess < target) {
         print('Too low, Try again..');
       } else {
         print('Too high, Try again..');
       }
+    } on FormatException {
+      print('That was not a number, Try again..');
+      continue;
+    } catch (e) {
+      print('An unexpected error occured: $e');
     }
-  } catch (e) {
-    print('An error occured: $e');
   }
 }
