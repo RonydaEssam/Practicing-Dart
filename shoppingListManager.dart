@@ -9,7 +9,6 @@ Show the user a menu (use a while loop + switch):
   2 → Remove an item
   3 → Show all items
   4 → Exit
-Use try..catch to handle invalid input (like typing letters instead of numbers).
 Make sure the list updates correctly as the user adds/removes items.
 */
 import 'dart:io';
