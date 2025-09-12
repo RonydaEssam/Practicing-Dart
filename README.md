@@ -5,6 +5,7 @@ I’m learning the fundamentals of Dart to prepare for Flutter app development.
 
 ## Exercises
 1. Number Guessing Game  
+2. Shopping List Manager
 
 <!--
 2. Multiplication Table  
