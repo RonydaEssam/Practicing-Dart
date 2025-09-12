@@ -24,7 +24,8 @@ void main() {
 
   print('Welcome to the shopping list!');
 
-  for (var i = 0; i < 100; i++) {
+  var running = true;
+  while (running == true) {
     print('Choose an option from the following:');
     print(options);
     String? userOption = stdin.readLineSync();
@@ -54,7 +55,7 @@ void main() {
         break;
       case '4':
         print('It was nice to help you, Have a good day!');
-        i = 200;
+        running = false;
         break;
     }
   }
