@@ -25,7 +25,7 @@ void main() {
 
   print('Welcome to the shopping list!');
 
-  while (true) {
+  for (var i = 0; i < 100; i++) {
     print('Choose an option from the following:');
     print(options);
     String? userOption = stdin.readLineSync();
@@ -41,15 +41,21 @@ void main() {
         print('Your list consists of: $cart');
         print('Specify the item you want to remove:');
         String? removeItem = stdin.readLineSync();
-        cart.remove(removeItem);
-        print('$removeItem removed from list.');
+        if (cart.contains(removeItem)) {
+          cart.remove(removeItem);
+          print('$removeItem removed from list.');
+        } else {
+          print(
+            '$removeItem is not in the list, please specify an item from the list.',
+          );
+        }
         break;
       case '3':
         print('Your list contains: \n$cart');
         break;
       case '4':
-      default:
         print('It was nice to help you, Have a good day!');
+        i = 200;
         break;
     }
   }
