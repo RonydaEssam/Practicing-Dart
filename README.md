@@ -8,8 +8,7 @@ I’m learning the fundamentals of Dart to prepare for Flutter app development.
 2. Shopping List Manager
 
 <!--
-2. Multiplication Table  
-3. Shopping Cart  
+3. Multiplication Table
 4. ATM Machine Simulation  
 5. FizzBuzz with a Twist  
 -->
